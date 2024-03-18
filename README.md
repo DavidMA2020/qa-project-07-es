@@ -1,0 +1,62 @@
+# Proyecto 7: David Martinez Aguirre - qa-project-07-es - Automatizacion para el pedido de un taxi en Urban.Routes
+- En este proyecto se ha automatizado las pruebas para el pedido de un taxi en Urban.Routes, el cual tiene como objetivo realizar las siguientes tareas:
+  - Configurar la dirección
+  - Seleccionar la tarifa Comfort
+  - Rellenar el número de teléfono (dentro de esta se recupera un codigo SMS)
+  - Agregar una tarjeta de crédito (esto incluye el numero de tarjeta y el codigo CVV)
+  - Escribir un mensaje para el controlador (Conductor del taxi)
+  - Pedir una manta y pañuelos
+  - Pedir 2 helados
+  - Aparece el modal para buscar un taxi.
+  - Esperar a que aparezca la información del conductor en el modal (opcional)
+- Necesitas tener instalados los paquetes pytest y Selenium para ejecutar las pruebas, para instalar estos paquetes puedes hacerlo de la siguiente forma:
+  - Pytest:
+    - Ir a la pestaña de python packages, buscar e instalar los paquetes mensionados. 
+    - Ir a la pestaña de la consola y escribir: pip install [nombre_del_paquete]
+  - Selenium:
+    - Debes descargar e Instalar el controlador para el navegador que vas a utilizar, tambien tienes que tener en cuenta la version de tu navegador, para descargarlo puedes hacerlo del siguiente Link: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+- Configurar las siguientes variables que estan en el archivo data.py:
+  - urban_routes_url
+  - address_from
+  - address_to
+  - phone_number
+  - card_number
+  - card_code
+  - message_for_driver
+- Para ejecutar las pruebas se puede hacer de las siguientes formas
+  - Ejecutando el comando "pytest main.py" en el terminal de PyCharm.
+  - Ejecutar cada pruebas de forma individual dando clic en el
+    boton verde que aparece al costado izquierdo de cada una de las funciones de prueba en el archivo "main.py".
+  - Seleccionamos el archivo "main.py", luego en la parte superior deplegamos las opciones y seleccionamos la opción "Current File" para ejecutar todas las pruebas.
+  - Otra forma de ejecucion es ir a la opcion Run>Edit Configurations
+    - Dar clic en el boton + 
+    - Seleccionar la opcion: Python tests>pytest
+    - Agregar un nombre en la opcion "Name"
+    - En la parte derecha en la opcion de "Target" seleccionamos Script path
+    - Dar clic en el icono de la carpeta en la caja que esta debajo de la opcion de Target y seleccionar el archivo "main.py"
+    - En la opcion de "Python interpreter" seleccionar la opcion por defecto
+    - luego dar clic en el boton Apply
+    - luego dar clic en el boton Ok, despues de esto se cerrara la ventana de configuracion
+  - luego validar que en la parte superior que este seleccionado el nombre que has escrito.
+  - Dar clic en el boton Play de color verde que esta al costado del nombre y se ejecutara automaticamnete las pruebas.
+- Para el desarrollo de la automatizacion de estas pruebas se ha utilizado PyCharm con el lenguaje Pyton,
+  dentro del desarrollo se ha utilizado lo siguiente:
+  - Crear Controladores para navegadores
+  - Abrir y cerrar paginas
+  - Funciones
+  - Uso de Localizadores, parametros y argumentos
+  - Creacion de objetos
+  - Uso de Metodos y combinacion de metodos en pasos
+  - La estructura del codigo esta basado en POM 
+  - Uso de setup_class y teardown_class
+  - Assert y operadores de comparación
+  - Obtencion de texto de un elemento
+  - Rellenar campos de entrada
+  - Busqueda de elementos
+  - Hacer clic en elementos
+  - Obtencion de datos del request de un servicio de forma interna
+  - Uso de tiempos de espera (Implicitos y explicitos)
+- para descargar y alinear las fuentes con los cambios se ha utilizado:
+  - Git
+  - GitHub
+  - Cygwin
